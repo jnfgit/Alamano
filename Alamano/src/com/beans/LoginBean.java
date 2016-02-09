@@ -9,8 +9,7 @@ public class LoginBean {
 	public String login(){
 		System.out.print(emailAddress + " " + password + " " + rememberMe);
 		return null;
-	}
-	
+	}	
 		
 	public String getEmailAddress() {
 		return emailAddress;

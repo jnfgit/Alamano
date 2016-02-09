@@ -1,0 +1,9 @@
+Alamano/target/classes/com/beans/LoginBean.class
+Alamano/target/classes/com/beans/UsuarioBean.class
+Alamano/target/classes/com/persistence/Usuario.class
+Alamano/target/classes/com/results/Customer.class
+Alamano/target/classes/com/types/CustomerLookupService.class
+Alamano/target/classes/com/types/CustomerLookupServiceImplementation.class
+Alamano/target/classes/com/utilities/Properties.class
+Alamano/target/classes/db/admin/ConnectionManagement.class
+Alamano/target/classes/db/admin/DataBaseHelper.class
