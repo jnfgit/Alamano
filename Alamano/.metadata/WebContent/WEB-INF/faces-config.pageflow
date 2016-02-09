@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13892921222642" configfile="/Alamano/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="r.xhtml" id="pf14549424511109" referenceLink="//@navigationRule.2/@fromViewId|" path="/r.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="s.xhtml" id="pf145494245111010" referenceLink="//@navigationRule.3/@fromViewId|" path="/s.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="inicio.xhtml" id="pf145495010278420" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf145495010278421 pf145495010278422 pf145495010278423" path="/inicio.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" id="pf145495010278424" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf145495010278421" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="registro.xhtml" id="pf145495010278425" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf145495010278422" path="/registro.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="servicios.xhtml" id="pf145495010278426" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf145495010278423" path="/servicios.xhtml"/>
+  <links id="pf145495010278421" target="pf145495010278424" source="pf145495010278420" outcome="goLogin"/>
+  <links id="pf145495010278422" target="pf145495010278425" source="pf145495010278420" outcome="goRegistro"/>
+  <links id="pf145495010278423" target="pf145495010278426" source="pf145495010278420" outcome="goServicios"/>
+</pageflow:Pageflow>
