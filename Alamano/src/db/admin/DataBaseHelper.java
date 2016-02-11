@@ -10,9 +10,9 @@ public class DataBaseHelper {
 	/**
 	 * SHA1(str)
 	 * Calcula una checksum SHA1 de 160-bit para la cadena, como se describe en RFC 3174 (Secure Hash Algorithm). 
-	 * El valor se retorna como cadena de 40 dítigos hexadecimales, o NULL si el argumento era NULL. 
-	 * Uno de los usos posibles para esta función es una clave hash. 
-	 * También puede usarlo como función criptográficamente segura para almacenar contraseñas.
+	 * El valor se retorna como cadena de 40 ditigos hexadecimales, o NULL si el argumento era NULL. 
+	 * Uno de los usos posibles para esta funcion es una clave hash. 
+	 * Tambien puede usarlo como funcion criptograficamente segura para almacenar contraseñas.
 	 * @param password
 	 * @return
 	 */

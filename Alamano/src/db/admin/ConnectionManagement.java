@@ -10,8 +10,8 @@ import com.utilities.Properties;
 
 /**
  * @author nfernandez 26/01/2015
- * La persistencia y recuperación de datos se gestionará a través de JPA + HIBERNATE pero
- * si deseamos hacer consultas especificas sin usar un objeto JPA podemos gestionar a través
+ * La persistencia y recuperacion de datos se gestionara a traves de JPA + HIBERNATE pero
+ * si deseamos hacer consultas especificas sin usar un objeto JPA podemos gestionar a traves
  * de ConnectionManagement.
  */
 public class ConnectionManagement {
