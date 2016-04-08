@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.utilities.Properties;
+import com.utilities.Parameters;
 
 /**
  * @author nfernandez 26/01/2015
@@ -28,8 +28,8 @@ public class ConnectionManagement {
         }
 		
 		try {
-        	String user = Properties.getParameter(ConnectionManagement.class.getName(), "database_username");
-        	String pass = Properties.getParameter(ConnectionManagement.class.getName(), "database_userpassword");
+        	String user = Parameters.getParameter(ConnectionManagement.class.getName(), "database_username");
+        	String pass = Parameters.getParameter(ConnectionManagement.class.getName(), "database_userpassword");
         	
             this.conn = DriverManager
                 .getConnection("jdbc:mysql://localhost:3306/alamano", user, pass);
@@ -78,8 +78,8 @@ public class ConnectionManagement {
                 
         try {
         	
-        	String user = Properties.getParameter(ConnectionManagement.class.getName(), "database_username");
-        	String pass = Properties.getParameter(ConnectionManagement.class.getName(), "database_userpassword");
+        	String user = Parameters.getParameter(ConnectionManagement.class.getName(), "database_username");
+        	String pass = Parameters.getParameter(ConnectionManagement.class.getName(), "database_userpassword");
         	
             connection = DriverManager
                 .getConnection("jdbc:mysql://localhost:3306/alamano", user, pass);

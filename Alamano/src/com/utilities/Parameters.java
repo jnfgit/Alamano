@@ -10,7 +10,7 @@ import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
 
-public class Properties {
+public class Parameters {
 	
 	public static String getParameter(String classKey, String valueKey) throws Exception{
 		String value = null;
@@ -45,6 +45,37 @@ public class Properties {
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 			throw new Exception(e.getMessage());
+		}
+		return value;
+	}
+	
+	public static String getParameter(String key) {
+		String value = null;
+		SAXBuilder builder = new SAXBuilder();
+
+		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+		URL url = classLoader.getResource("com/properties/db_properties.xml");
+		
+		try {
+			File xmlFile = new File(url.toURI());
+			Document document = (Document) builder.build(xmlFile);
+
+			Element rootNode = document.getRootElement();
+
+			List list = rootNode.getChildren(key);
+
+			for (int i = 0; i < list.size(); i++) {
+				Element tabla = (Element) list.get(i);
+
+				value = tabla.getText();
+			}
+		} catch (IOException io) {
+			System.out.println(io.getMessage());
+		} catch (JDOMException jdomex) {
+			System.out.println(jdomex.getMessage());
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		return value;
 	}
